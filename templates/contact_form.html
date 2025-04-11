@@ -1,0 +1,26 @@
+<form method="POST">
+    <label>Name</label>
+    <input type="text" name="name" required><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone" pattern="\d{10}" required><br>
+
+    <label>Subject:</label>
+    <select name="subject">
+        <option value="General Inquiry">Genral Inquiry</option>
+        <option value="Support request">Support Request</option>
+        <option value="other">Other</option>
+    </select>
+    <input type="text" name="custom_subject" placeholder="if other, specify"><br>
+
+    <label>Preferred Contact Method:</label><br>
+    <input type="checkbox" name="preferred_contact" value="Email"> Email
+    <input type="checkbox" name="preferred_contact" value="Phone"> Phone
+    <input type="checkbox" name="preferred_contact" value="Both"> Both<br>
+
+    <button type="submit">Submit</button>
+    <form></form>
+
